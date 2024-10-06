@@ -11,3 +11,6 @@ int get_hours(int time) { return time / num_sec_in_hour; }
 // returns time in minutes from given time minus whole hours
 int get_minutes(int time) { return time % num_sec_in_hour / num_sec_in_minute; }
 
+// returns time in seconds from given time minus whole minutes
+int get_seconds(int time) { return time % num_sec_in_minute; }
+
